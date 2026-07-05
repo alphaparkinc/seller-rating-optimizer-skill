@@ -1,0 +1,48 @@
+{
+  "name": "seller-rating-optimizer-skill",
+  "version": "1.0.0",
+  "description": "Analyze marketplace seller ratings, identify rating drag factors, and generate an action plan to improve seller scores on Amazon, eBay, Shopee, and similar platforms.",
+  "author": "alphaparkinc",
+  "category": "operations",
+  "tags": [
+    "seller-rating",
+    "marketplace",
+    "amazon",
+    "reviews",
+    "optimization"
+  ],
+  "inputs": {
+    "current_metrics": {
+      "type": "object",
+      "description": "Current seller metrics: overall_rating, positive_pct, response_time_hours, late_shipment_rate, defect_rate, cancellation_rate."
+    },
+    "platform": {
+      "type": "string",
+      "description": "Marketplace platform (amazon, ebay, shopee, etsy, walmart)."
+    },
+    "recent_reviews": {
+      "type": "array",
+      "description": "Recent reviews: [{rating, text, resolved}]."
+    }
+  },
+  "outputs": {
+    "rating_score": {
+      "type": "number",
+      "description": "Calculated composite seller health score (0-100)."
+    },
+    "risk_flags": {
+      "type": "array",
+      "description": "Metrics below platform threshold triggering risk."
+    },
+    "action_plan": {
+      "type": "array",
+      "description": "Prioritized actions to improve seller rating."
+    },
+    "projected_improvement": {
+      "type": "object",
+      "description": "Projected rating improvement if actions taken."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
