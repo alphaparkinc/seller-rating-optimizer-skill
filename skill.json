@@ -1,5 +1,5 @@
 {
-  "name": "seller-rating-optimizer-skill",
+  "name": "genpark-seller-rating-optimizer-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Analyze marketplace seller ratings, identify rating drag factors, and generate an action plan to improve seller scores on Amazon, eBay, Shopee, and similar platforms.",
   "author": "genpark",
