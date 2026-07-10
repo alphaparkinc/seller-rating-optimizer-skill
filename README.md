@@ -1,4 +1,4 @@
-# seller-rating-optimizer-skill
+# genpark-seller-rating-optimizer-skill
 
 > **GenPark AI Agent Skill** -- Analyze marketplace seller ratings, identify issues, and generate prioritized action plans to improve scores.
 
